@@ -13,7 +13,7 @@ source:
     - 0002-save-plots.patch
 
 build:
-  number: 6
+  number: 7
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
@@ -27,6 +27,7 @@ requirements:
     - cython                                 # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
 
   host:
     - python
@@ -35,7 +36,6 @@ requirements:
     - numpy
   run:
     - python
-    - {{ pin_compatible('numpy') }}
 
 test:
   requires:
