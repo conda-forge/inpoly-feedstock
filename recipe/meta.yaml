@@ -13,7 +13,7 @@ source:
     - 0002-save-plots.patch
 
 build:
-  number: 9
+  number: 10
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
@@ -52,7 +52,7 @@ test:
   
 about:
   home: https://github.com/dengwirda/inpoly-python
-  license: custom
+  license: LicenseRef-Custom
   license_file: LICENSE.md
   summary: A fast point(s)-in-polygon routine for Python.
   description: |
