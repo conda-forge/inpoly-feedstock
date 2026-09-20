@@ -52,7 +52,7 @@ test:
   
 about:
   home: https://github.com/dengwirda/inpoly-python
-  license: custom
+  license: LicenseRef-Custom
   license_file: LICENSE.md
   summary: A fast point(s)-in-polygon routine for Python.
   description: |
